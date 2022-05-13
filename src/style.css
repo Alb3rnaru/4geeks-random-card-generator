@@ -1,1 +1,45 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+}
+
+#card-number {
+  /* display: flex; */
+  /* position: relative; */
+  /* margin: auto;
+  padding-top: auto;
+  padding-bottom: auto; */
+  text-align: center;
+  /* align-items: center; */
+  /* vertical-align: middle; */
+  justify-content: center;
+}
+
+.spade::after {
+  content: "♠";
+  font-size: 50px;
+}
+
+.diamond::after {
+  content: "♦";
+  font-size: 50px;
+}
+
+.heart::after {
+  content: "♥";
+  font-size: 50px;
+}
+
+.club::after {
+  content: "♣";
+  font-size: 50px;
+}
