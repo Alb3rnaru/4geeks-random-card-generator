@@ -26,7 +26,21 @@ window.onload = function() {
     let suitsPosition = Math.round(Math.random() * 3);
     topDiv.className = suits[suitsPosition];
     botDiv.className = suits[suitsPosition];
-    let number = Math.round(Math.random() * (12 - 1) + 1);
+    let arrayofItems = [
+      "A",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "J",
+      "Q",
+      "K"
+    ];
+    let number = arrayofItems[Math.round(Math.random() * 11)];
     numberDiv.innerHTML = number;
   }
 
