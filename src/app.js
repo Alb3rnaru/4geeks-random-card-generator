@@ -18,14 +18,24 @@ window.onload = function() {
   let numberDiv = document.querySelector("#card-number");
   let number = Math.round(Math.random() * (12 - 1) + 1);
   //console.log(number);
+  changingColorOfNumber(suitsPosition);
   numberDiv.innerHTML = number;
 
   setInterval(newCard, 10000);
+
+  function changingColorOfNumber(positionOfSuit) {
+    if (positionOfSuit == 0 || positionOfSuit == 2) {
+      numberDiv.style.color = "red";
+    } else {
+      numberDiv.style.color = "black";
+    }
+  }
 
   function newCard() {
     let suitsPosition = Math.round(Math.random() * 3);
     topDiv.className = suits[suitsPosition];
     botDiv.className = suits[suitsPosition];
+    changingColorOfNumber(suitsPosition);
     let arrayofItems = [
       "A",
       "2",
