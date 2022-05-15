@@ -14,6 +14,7 @@ window.onload = function() {
   let suitsPosition = Math.round(Math.random() * 3);
   topDiv.className = suits[suitsPosition];
   botDiv.className = suits[suitsPosition];
+  botDiv.style.transform = "rotate(180deg)";
   let numberDiv = document.querySelector("#card-number");
   let number = Math.round(Math.random() * (12 - 1) + 1);
   //console.log(number);
